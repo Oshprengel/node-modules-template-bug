@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "description": "Reproduces Endor partial-scan failure caused by Python requirements.txt placeholder files bundled inside aws-cdk init templates under node_modules/.",
   "private": true,
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "postinstall": "find node_modules -name requirements.txt"
   },
   "dependencies": {
     "aws-cdk": "2.150.0",
     "@aws-cdk/asset-awscli-v1": "2.2.202",
-    "constructs": "10.3.0"
+    "constructs": "10.3.0",
+    "lodash": "4.17.4",
+    "minimist": "1.2.0",
+    "axios": "0.21.0",
+    "express": "4.16.0"
   }
 }
